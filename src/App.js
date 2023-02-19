@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import Componente1 from "./componentes/Componente1";
+import Counter from "./componentes/Counter";
+import Basic from "./componentes/Basic";
 function App() {
+  const [state, setState] = useState("Some Text");
+  const [name, setName] = useState("Moe");
+
+  const changeName = () => {
+    setName("Steve");
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Basic />
+      <h1> Counter </h1>
+      <Counter />
+      <h1> Basic Hook useState </h1>
+      <Componente1 name={name} changeName={changeName} />
     </div>
   );
 }
-
 export default App;
