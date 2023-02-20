@@ -15,7 +15,7 @@ const Componente1 = (props) => {
     <div>
       <button onClick={changeState}>State Change Button</button>
       <div>
-        <p>{state} </p>
+        <p>{state}</p>
       </div>
       <button onClick={changeNameToSteve}>Change Name</button>
       <p>{props.name}</p>

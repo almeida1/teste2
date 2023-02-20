@@ -3,7 +3,7 @@ import React from "react";
 const Basic = () => {
   return (
     <div>
-      <h1> Fundamentos de teste</h1>
+      <h4> Automação de Teste com React - Fundamentos</h4>
     </div>
   );
 };
